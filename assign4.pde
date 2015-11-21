@@ -31,8 +31,6 @@ PImage treasure;
 PImage [] enemy;
 PImage end, pEnd;
 PImage []flame;
-Thread thread = new Thread();
-
 
 void setup () {  
   size(640,480);
@@ -249,6 +247,7 @@ void draw(){
         }
       }
       if(ex[17] >width && ex[0] >width && ex[9] >width ){
+        n = 1;
         ex[0] = 0;
         ex[5] = -width; 
         ex[9] = -width; 
